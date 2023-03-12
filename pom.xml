@@ -74,6 +74,7 @@
         <module>testcase</module>
         <module>site</module>
         <module>packaging</module>
+        <module>arthas-report-aggregate-module</module>
     </modules>
 
     <properties>
@@ -89,6 +90,10 @@
         <netty.version>4.1.77.Final</netty.version>
         <sonar.organization>youcef00</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.coverage.jacoco.xmlReportPaths>
+            ${project.basedir}/report-aggregate/target/site/
+            jacoco-aggregate/jacoco.xml
+        </sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
     <dependencyManagement>
